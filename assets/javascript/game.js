@@ -6,11 +6,7 @@ const teamTwoShootButton = document.querySelector("#teamtwo-shoot-button")
 let teamTwoShots = document.querySelector("#teamtwo-numshots")
 let teamTwoGoals = document.querySelector("#teamtwo-numgoals")
 
-const resetButton = document.querySelector("#reset-button")
-let numResets = document.querySelector("#num-resets")
 
-
-// team one
 teamOneShootButton.addEventListener("click", function() {
     console.log("teamOneShootButton clicked")
     let newTeamOneShotCount = Number(teamOneShots.innerHTML) + 1
@@ -23,7 +19,6 @@ teamOneShootButton.addEventListener("click", function() {
 })
 
 
-//team two
 teamTwoShootButton.addEventListener("click", function() {
     console.log("teamTwoShootButton clicked")
     let newTeamTwoShotCount = Number(teamTwoShots.innerHTML) + 1
@@ -36,7 +31,6 @@ teamTwoShootButton.addEventListener("click", function() {
 })
 
 
-// resets
 resetButton.addEventListener("click", function() {
     console.log("resetButton clicked")
     let newResetCount = Number(numResets.innerHTML) + 1
